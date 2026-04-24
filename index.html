@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactivity with JavaScript</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="/javascript.js"></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <h1>Week 1</h1>
+            <h2>Data Types</h2>
+            <ul>
+                <li>
+                    <a class="navbar" href="/JS-week1-data_types/index.html" aria-current="true">Example</a>
+                </li>
+            </ul>
+            <h2>Variables</h2>
+            <ul>
+                <li>
+                    <a class="navbar" href="/JS-week1-variables/variables.html" aria-current="true">Variables</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-variables/prompts.html" aria-current="true">Prompts</a>
+                </li>
+            </ul>
+            <h2>Output</h2>
+            <ul>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/alert.html" aria-current="true">Alert</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/console-log.html" aria-current="true">Console-Log</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/innerHTML.html" aria-current="true">innerHTML</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/prompt.html" aria-current="true">Propmt</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/write.html" aria-current="true">Write</a>
+                </li>
+            </ul>
+        </ul>
+        <ul>
+            <h1>Week 2</h1>
+            <ul>
+                <li>
+                    <a class="navbar" href="/JS-week2-basic_date_example/index.html" aria-current="true">Basic Date Example</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week2-change_style/index.html" aria-current="true">Change Style</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week2-events_basic_example/index.html" aria-current="true">Basic Events Example</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/alert.html" aria-current="true">Alert</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/console-log.html" aria-current="true">Console-Log</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/innerHTML.html" aria-current="true">innerHTML</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/prompt.html" aria-current="true">Propmt</a>
+                </li>
+                <li>
+                    <a class="navbar" href="/JS-week1-output/write.html" aria-current="true">Write</a>
+                </li>
+            </ul>
+        </ul>
+        <ul>
+            <h1>Homework</h1>
+            <ul>
+                <li>
+                    <a class="navbar" href="/gallery-homework/index.html" aria-current="true">Gallery Homework</a>
+                </li>
+            </ul>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1 id = "test">JS Write Tester</h1>
+            <h1 id = "test">JS Write Tester</h1>
+            <script>
+                document.getElementById('test').innerHTML = "Hello World"
+
+                // The option below is a more up-to-date version of selecting an element.
+                // document.querySelector('#test').innerHTML = "Hello World"
+            </script>
+            <p>What happens if you have two elements with id = "test"? </p>
+            <button id="name_button">Provide name</button>
+            <em id="name"></em>
+        </section>
+        <section id="math">
+            <h2>Math Examples</h2>
+            <table>
+                <tr>
+                    <th>
+                        Operator
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        +
+                    </td>
+                    <td>
+                        2 + 5
+                    </td>
+                    <td id="add">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        5 - 2
+                    </td>
+                    <td id="subtract">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        +
+                    </td>
+                    <td>
+                        2 + 5
+                    </td>
+                    <td id="multiply">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        +
+                    </td>
+                    <td>
+                        2 + 5
+                    </td>
+                    <td id="divide">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        +
+                    </td>
+                    <td>
+                        13 % 5
+                    </td>
+                    <td id="moduls">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="strings">
+            <h2>String Examples</h2>
+            <table>
+                <tr>
+                    <th>
+                        Operator
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        +
+                    </td>
+                    <td>
+                        'Hi' + 5
+                    </td>
+                    <td id="concat">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        -
+                    </td>
+                    <td>
+                        '11' - 1
+                    </td>
+                    <td id="redact">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        +=
+                    </td>
+                    <td>
+                        'Hi' + 'There'
+                    </td>
+                    <td id="append">
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="booolean">
+            <h2>Boolean Examples</h2>
+            <table>
+                <tr>
+                    <th>
+                        Operator
+                    </th>
+                    <th>
+                        Example
+                    </th>
+                    <th>
+                        Result
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        ==
+                    </td>
+                    <td>
+                        x == <span id="compare_value"></span>
+                    </td>
+                    <td id="compare_true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ==
+                    </td>
+                    <td>
+                        x == 5
+                    </td>
+                    <td id="compare_false">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ==
+                    </td>
+                    <td>
+                        x != 5
+                    </td>
+                    <td id="compare_not_true">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ==
+                    </td>
+                    <td>
+                        x == '12'
+                    </td>
+                    <td id="compare_string">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        ===
+                    </td>
+                    <td>
+                        x === '12'
+                    </td>
+                    <td id="compare_string_type">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        !==
+                    </td>
+                    <td>
+                        x !== '12'
+                    </td>
+                    <td id="compare_not_string">
+                    </td>
+                </tr>
+            </table>
+            <em>Assume X = 12</em>
+        </section>
+    </main>
+    <script>
+        addClickListeners();
+        console.log("[]===[''|''|''|''}>---");
+        document.getElementById("name_button").addEventListener('click',function(){
+            var name = prompt("What is your name?");
+            document.getElementById("name").innerHTML = name
+        })
+    </script>
+    <script>
+        document.getElementById("add").innerHTML = 2 + 5
+        document.getElementById("subtract").innerHTML = 5 - 2
+        document.getElementById("multiply").innerHTML = 2 * 5
+        document.getElementById("divide").innerHTML = 5 / 2
+        document.getElementById("moduls").innerHTML = 13 % 5 
+    </script>
+    <script>
+        document.getElementById("concat").innerHTML = 'Hi' + 5
+        document.getElementById("redact").innerHTML = '11' - 1
+        document.getElementById("append").innerHTML = 'Hi'
+        document.getElementById("append").innerHTML += 'There'
+    </script>
+    <script>
+        var value = 12
+        document.getElementById("compare_value").innerHTML = value
+        document.getElementById("compare_true").innerHTML = (value == value)
+        document.getElementById("compare_false").innerHTML = (value == 5)
+        document.getElementById("compare_not_true").innerHTML = (value != 5)
+        document.getElementById("compare_string").innerHTML = (value == '12')
+        document.getElementById("compare_string_type").innerHTML = (value === '12')
+        document.getElementById("compare_not_string").innerHTML = (value !== '12')
+    </script>
+</body>
+</html>
