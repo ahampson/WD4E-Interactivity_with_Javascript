@@ -26,8 +26,8 @@ function unDo(){
         back to the original text.  You can use the html code to see what that original text was
     */
 
-    console.log("[-] Preview Text: " + previewPic.alt);
-    console.log("[-] Preview Image URL: " + previewPic.src);
+    console.log("[-] Prevew Text Reset");
+    console.log("[-] Preview Image URL Reset");
 
 	document.querySelector('#image').innerText = "Hover over an image below to display here.";
     document.getElementById('image').style.backgroundImage = "url('')"
