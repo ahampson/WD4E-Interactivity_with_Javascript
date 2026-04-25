@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interactivity with JavaScript</title>
-    <link rel="stylesheet" href="/style.css">
-    <script src="/javascript.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/javascript.js"></script>
 </head>
 <body>
+    <a href="#main" class="offpage">Skip to main content</a>
     <nav>
         <ul>
             <h1>Week 1</h1>
@@ -83,8 +84,8 @@
             </ul>
         </ul>
     </nav>
-    <main>
-        <section>
+    <main id="main">
+        <section tabindex="1">
             <h1 id = "test">JS Write Tester</h1>
             <h1 id = "test">JS Write Tester</h1>
             <script>
@@ -97,7 +98,7 @@
             <button id="name_button">Provide name</button>
             <em id="name"></em>
         </section>
-        <section id="math">
+        <section tabindex="1" id="math">
             <h2>Math Examples</h2>
             <table>
                 <tr>
@@ -163,7 +164,7 @@
                 </tr>
             </table>
         </section>
-        <section id="strings">
+        <section tabindex="1" id="strings">
             <h2>String Examples</h2>
             <table>
                 <tr>
@@ -209,7 +210,7 @@
                 </tr>
             </table>
         </section>
-        <section id="booolean">
+        <section tabindex="1" id="booolean">
             <h2>Boolean Examples</h2>
             <table>
                 <tr>

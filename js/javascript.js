@@ -9,4 +9,10 @@ function addClickListeners() {
             showPopup(title);
         });
     });
+    
+    var sectionList = document.getElementsByTagName('section');
+    for(var index = 0 ; index <= sectionList.length ; index ++){
+        console.log(index, sectionList[index])
+    }
 }
+
