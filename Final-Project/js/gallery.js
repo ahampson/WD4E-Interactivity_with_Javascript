@@ -44,6 +44,6 @@ function addListeners() {
             unDo();
         });
         preview.setAttribute('tabindex', "0")
-        console.log('[+][+] Adding TabIndex to:',preview.ATTRIBUTE_NODE.alt)
+        console.log('[+][=>] Adding TabIndex to:',preview.src)
     });
 }
