@@ -32,3 +32,16 @@ function unDo(){
 	document.querySelector('#image').innerText = "Hover over an image below to display here.";
     document.getElementById('image').style.backgroundImage = "url('')"
 }
+
+function addListeners() {
+    const previews = document.querySelectorAll('.preview');
+    previews.forEach(function(preview) {
+        preview.addEventListener('focus', function() {
+            upDate(preview);
+        });
+        preview.addEventListener('blur', function() {
+            unDo();
+        });
+        preview.setAttribute('tabindex', "0")
+    });
+}
