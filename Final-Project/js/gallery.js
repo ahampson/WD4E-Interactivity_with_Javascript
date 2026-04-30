@@ -34,6 +34,7 @@ function unDo(){
 }
 
 function addListeners() {
+    console.log('[+] Adding event listeners to the images for the keyboard controls')
     const previews = document.querySelectorAll('.preview');
     previews.forEach(function(preview) {
         preview.addEventListener('focus', function() {
@@ -43,5 +44,6 @@ function addListeners() {
             unDo();
         });
         preview.setAttribute('tabindex', "0")
+        console.log('[+][+] Adding TabIndex to:',preview.ATTRIBUTE_NODE.alt)
     });
 }
